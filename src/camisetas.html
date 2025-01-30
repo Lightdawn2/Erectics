@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Erectics" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Camisetas</title>
-</head>
-<body>
-    <h1>Camisetas</h1>
-</body>
-</html>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="/index.html"><img src="/img/Logo_V.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/index.html#about">Acerca de nosotros</a></li>
+          <li><a href="/index.html#service">Servicios</a></li>
+          <li><a href="/index.html#explore">Noticias</a></li>
+          <li><a href="/index.html#contact">Contactanos</a></li>
+        </ul>
+        <button onclick=location.href='https://discord.gg/DeYbPbVmj2' class="btn nav__btn">Discord</button>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <p>Humildes - Erectos - Sucintos</p>
+        <h1>Listado de<br />juegos ya <span>JUGADOS</span>.</h1>
+      </div>
+    </header>
