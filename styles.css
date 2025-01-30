@@ -420,12 +420,22 @@ nav {
 .explore__bg {
   margin-top: 4rem;
   padding-block: 3rem;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: auto;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 1rem;
+  overflow-x: auto;
+  @media (max-width: 768px) {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
   grid-template-columns:
     minmax(1rem, 1fr)
     minmax(0, var(--max-width))
     minmax(1rem, 1fr);
-  background-image: url("assets/explore.jpg");
+  background-image: url("img/background_V.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
